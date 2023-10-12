@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #D0BFFF;
+}
+
+/* ------------header section---------- */
+.navbar{
+    background-color: #BEADFA;
+    display: flex;
+}
+.main-logo img{
+    height: 30vh;
+}
+.company{
+    margin-right: 100px;
+}
+.name{
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+.summary{
+    font-family: 2vw;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 45px;
+}
+.btn{
+    padding: 7px 32px;
+    border-radius: 10px;   
+    color: white;
+    font-weight: 700;
+}
+
+.theme{
+    background-color: rgba(14, 9, 9, 0.937);
+}
+.theme:hover{
+    background-color: rgb(41, 20, 20);
+}
+.login{
+    background-color: rgb(107, 20, 189);
+}
+.login:hover{
+    background-color: rgb(160, 94, 223);
+}
+.customize{
+    background-color: rgb(53, 117, 53);
+}
+.customize:hover{
+    background-color: rgb(22, 188, 22);
+}
+.gallery{
+    background-color: rgb(114, 19, 19);
+}
+.gallery:hover{
+    background-color: rgb(178, 29, 29);
+}
+
+/* -------------main content--------- */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #EAD7BB;
+    height: 425px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left:  250px;
+    margin-bottom: 140px;
+    border-radius: 8px;
+}
+.box:hover{
+    opacity: 0.8;
+    border: 1px solid purple;
+}
+.game-img{
+    height: 70%;
+    width: 100%;
+}
+.info{
+    height: 30%;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+/* ---------footer content-------- */
+.footer{
+    width: 100vw;
+    display: flex;
+    margin-bottom: 0px;
+    background-color: #BEADFA;
+}
+.footer-logo img{
+    margin-top: 180px;
+    margin-left: 130px;
+    width: 45%;
+}
+.footer-company{
+    margin-top: 170px;
+    margin-right: 250px;
+    margin-left: 20px;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-compName{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-info li{
+    color: blue;
+}
+.footer-info li:hover{
+    cursor: pointer;
+    color: blue;
+    font-weight: 800;
+}
+.footer-icon{
+    width: 250px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon li i{
+   
+}
+.footer-icon li i:hover{
+    font-size: xx-large;
+}
+
+@media (max-width:600px) {
+    .summary,.buttons{
+        display: none;
+    }
+    .name{
+        margin-left: 35px;
+        font-size: 70px;
+    }
+    .main-logo img{
+        height: 15vh;
+    }
+    .name{
+        font-size: 3vw;
+    }
+}
