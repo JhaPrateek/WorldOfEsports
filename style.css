@@ -150,18 +150,31 @@ body{
     font-size: xx-large;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .summary,.buttons{
         display: none;
     }
     .name{
-        margin-left: 35px;
-        font-size: 70px;
+        font-size: 10vw;
+        margin:5vw 4vw;
+    }
+    .main{
+        margin: 5vw;
+        background-color: aqua;
+        width: 100%;
+    }
+    .main div{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid rebeccapurple;
+        margin: 15vw auto;
     }
     .main-logo img{
         height: 15vh;
     }
-    .name{
-        font-size: 3vw;
+    .info div{
+        display: flex;
+        flex-direction: column;
     }
+
 }

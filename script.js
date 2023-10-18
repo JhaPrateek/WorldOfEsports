@@ -15,3 +15,10 @@ const customize=document.querySelector(".customize");
 customize.addEventListener("click",()=>{
     alert("Currently under maintainance")
 })
+
+const bgmiPage=document.querySelector(".bgmi");
+bgmiPage.addEventListener("click",()=>{
+    const url="bgmi.html";
+    window.open(url,"_blank");
+})
+
