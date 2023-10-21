@@ -7,15 +7,20 @@ body{
     display: flex;
     background-color: rgb(177, 243, 243);
     justify-content: center;
+    min-height: 100vh;
+    max-width: 80vw;
+    margin:0 auto;
 }
 .logo img{
     width: 25vw;
+    max-height: 55vh;
     margin:20vh auto;
     margin-left: 200px;
 }
 .content{
     background-color: white;
     border: 1px solid gray;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,6 +28,7 @@ body{
     margin: 25vh 100px;
     height: 350px;
     width: 330px;
+    box-shadow: 3px 3px 5px gray;
 }
 input{
     height: 35px;
@@ -62,4 +68,22 @@ span:hover{
 }
 input:hover{
     outline-color: blue;
+}
+
+@media (max-width:700px) {
+    body{
+        background-color: rgb(177, 243, 243);;
+    }
+    .container{
+        display: block;
+    }
+    
+    .logo img{
+        width: 35vh;
+        margin: 5vh 15vw;
+    }
+    .content{
+        margin-top: 1vh;
+        height: 45vh;
+    }
 }
